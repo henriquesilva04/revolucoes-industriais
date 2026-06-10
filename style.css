@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url('revolucoes.png');
+    background-color: #ccb19d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+/* O efeito ao passar o mouse */
+header nav ul li:hover {
+    background-color: #59250d; /* Usa o castanho mais escuro dos seus botões */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Adiciona a sombra ao redor do botão */
+    transform: translateY(-2px); /* Opcional: faz o botão dar uma leve subidinha */
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Prepara o item para uma transição suave */
+    padding: 15px;
+}
+
+.tudo {
+    background-image: url('revolucoes.png');
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+}
+
+
+.container-vitrine {
+    display: flex;          /* Ativa o alinhamento em linha */
+    flex-wrap: wrap;       /* Se não couber, pula para a próxima linha */
+    justify-content: center; /* Centraliza os itens na tela */
+    gap: 20px;             /* Cria o espaço/separação entre cada um */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;     /* Limita o tamanho em telas grandes */
+    margin-top: 100px;
+}
+
+
+.parte-superior h1 {
+    padding: 0 15px;
+    width: 300px;
+}
+
+.meio {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+
+}
+
+.parte-superior {
+    width: 100%;
+    background-color: #2b1007;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    gap: 5px;
+    font-family: cursive;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-family: cursive;
+    transition: all 0.3s ease;
+}
+
+header nav ul {
+    margin-right: 30px;
+    padding: 0 15px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    width: 300px;
+
+    /*Deixa um espaçamento nas entre as letras*/
+}
+
+.titulo{
+    margin-top:30px
+}
+
+.primeira {
+    padding: 30px;
+    margin: 15px;
+    background-color: #ad6e37;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 1.6rem;
+    font-family: cursive;
+}
+
+.primeira:hover{
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+
+
+.segunda {
+    padding: 30px;
+    margin: 15px;
+    background-color: #ad6e37;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 1.6rem;
+     font-family: cursive;
+}
+
+.segunda:hover{
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+
+
+.terceira {
+    padding: 30px;
+    margin: 15px;
+    background-color: #ad6e37;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 1.6rem;
+     font-family: cursive;
+}
+
+.terceira:hover{
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+
+
+.quarta {
+    padding: 30px;
+    margin: 15px;
+    background-color: #ad6e37;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 1.6rem;
+     font-family: cursive;
+}
+
+.quarta:hover{
+    transform: translateY(5px);
+    transition: 0.3s;
+}
+
+
+
+.texto {
+    margin-top: 20px
+}
+
+.btn-ver {
+    background-color: #59250d;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    content: '';
+}
+
+.btn-ver:hover{
+    transform: translateY(-5px); /* Efeito de flutuar ao passar o mouse */
+    transition: 0.3s;
+}
+
+/* Configuração do container principal */
+.container {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos um embaixo do outro */
+    align-items: center;    /* Centraliza todos os elementos na horizontal */
+    justify-content: center;/* Centraliza na vertical (caso o container tenha altura fixa) */
+    width: 100%;            /* Garante que o container use toda a largura disponível */
+    max-width: 1200px;      /* Define um limite de largura para não esticar demais em telas gigantes */
+    margin: 0 auto;         /* Centraliza o container inteiro na tela */
+    padding: 20px;          /* Adiciona um espaçamento interno nas laterais */
+}
+
+/* Ajustes e espaçamento do vídeo */
+.container iframe {
+    margin-top: 30px;       /* Cria um espaço de 30px entre o texto e o vídeo */
+    max-width: 100%;        /* Garante que o vídeo não morda as bordas em telas menores */
+    border-radius: 8px;     /* Opcional: deixa as bordas do vídeo arredondadas e elegantes */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: adiciona uma sombra suave sob o vídeo */
+}
+
+
+section {
+    padding: 30px 90px;
+    margin: 10px 0;
+    text-align: center;
+    position: relative;   /*Essencial para o botão Topo*/
+}
+
+#sobre {
+    background-color: #844419;
+    border-radius: 5px;
+}
+
+#sobre .conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+#sobre .texto-sobre {
+    max-width: 50%;
+}
+
+#sobre .texto-sobre p {
+    margin: 20px;
+    line-height: 2;
+    font-size: 1.2rem;
+}
+
+
+/* Alinhamento do texto dentro do artigo */
+.situacao {
+    width: 100%;
+    max-width: 800px;       /* Deixa o texto com o mesmo alinhamento de largura máxima do vídeo */
+    text-align: justify;    /* Distribui o texto de forma alinhada nas duas margens */
+}
+/*
+
+
+/* CORREÇÃO DA CLASSE SITUACAO */
+.situacao {
+    width: 90%;             /* Se adapta a telas menores deixando espaço nas laterais */
+    max-width: 1000px;      /* Não passa de 1000px em telas grandes */
+    margin: 20px auto;      /* Centraliza perfeitamente o bloco na tela */
+    background-color: #844419;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    height: auto;           /* Remove os 2000px fixos para o fundo se ajustar ao texto */
+    text-align: center;
+    border-radius: 5px;
+    line-height: 1.6rem;
+    font-family: cursive;
+    padding-bottom: 30px;
+}
+
+/* CORREÇÃO DAS CLASSES REVUM E REVUM3 */
+.revum, .revum3 {
+    width: 90%;             /* Fluido nas laterais */
+    max-width: 800px;       /* Mantém o limite de 800px que você queria */
+    margin: 20px auto;      /* Centraliza na tela */
+    padding: 30px;
+    background-color: #844419;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    height: auto;           /* Remove alturas fixas (400px e 600px) evitando quebras */
+    text-align: center;
+    border-radius: 5px;
+    line-height: 1.6rem;
+    font-family: cursive;
+}
+
+.prb{
+    margin-top: 40px;
+}
+
+.situacao p {
+    padding: 30px;
+}
+
+.situacao ul {
+    list-style-position: inside; /* Empurra as bolinhas para dentro do fluxo do texto centralizado */
+    padding: 0;
+}
+ 
+
+.espaco {
+    padding: 10px 30px;
+}
+
+.ul{
+    padding: 30px;
+}
+
+.resu {
+    font-family: cursive;
+    width: 90%;             /* Mantém uma largura flexível para telas menores */
+    max-width: 1000px;      /* Define o limite máximo ideal para leitura */
+    margin: 40px auto;      /* Centraliza o bloco na tela e dá espaço acima e abaixo */
+    background-color: #844419;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    height: auto;           /* Permite que o fundo cresça de acordo com o texto */
+    border-radius: 8px;     /* Bordas levemente arredondadas para um visual mais moderno */
+    
+    /* O SEGREDO ESTÁ AQUI: Espaçamento interno geral do container */
+    padding: 40px 50px;     /* 40px em cima/baixo e 50px de folga nas laterais */
+    box-sizing: border-box; /* Garante que o padding não faça o bloco estourar o tamanho da tela */
+}
+
+.resu p {
+    padding: 0;             /* Zera o padding antigo para não conflitar */
+    margin-bottom: 25px;    /* Cria um espaçamento perfeito entre um modelo de produção e o outro */
+    text-align: justify;    /* Distribui o texto de forma simétrica nas duas margens */
+    line-height: 1.8rem;    /* Aumenta ligeiramente o espaço entre as linhas para não cansar a leitura */
+    font-family: cursive;
+}
+
+/* Ajuste opcional para os títulos internos (Taylorismo, Fordismo...) ficarem destacados */
+.resu h2, .resu h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-align: center;     /* Mantém os títulos centralizados */
+    font-family: cursive;
+}
+
+footer {
+    width: 100%;
+    background-color: #2b1007;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+    font-size: 0.9rem;
+    border-top: 3px solid #59250d;
+}
+ 
+
